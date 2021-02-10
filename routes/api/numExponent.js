@@ -14,15 +14,15 @@ router.get('/', (req, res) => {
 
 });
 
-function exponent (a, n) 
+function exponent (num, power) 
 {
-   if (n === 0) 
+   if (power === 0) 
    {
     return 1;
     }
   else 
   {
-    return a * exponent(a, n-1);
+    return num * exponent(num, power-1);
   }
 };
 

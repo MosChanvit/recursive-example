@@ -12,14 +12,14 @@ router.get('/', (req, res) => {
 
 });
 
-function factorial(x) 
+function factorial(num) 
 { 
 
-  if (x === 0)
+  if (num === 0)
  {
     return 1;
  }
-  return x * factorial(x-1);
+  return num * factorial(num-1);
          
 }
 
